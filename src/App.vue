@@ -3,7 +3,15 @@
         <div id="nav">
             <router-link to="/">Home</router-link> |
             <router-link to="/about">About</router-link> |
-            <router-link to="/vue-codemirror">VueCodeMirrorDemo</router-link> |
+            <router-link to="/vue-codemirror_data_binding"
+                >vue-codemirror：直接数据绑定</router-link
+            >
+            |
+            <router-link
+                to="/vue-codemirror_manually_control_data_synchronization"
+                >vue-codemirror：手动控制数据同步</router-link
+            >
+            | <router-link to="/js-yaml">js-yaml</router-link> |
         </div>
         <div>===以下是内容===</div>
         <router-view />

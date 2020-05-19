@@ -20,9 +20,22 @@ const routes = [
             import(/* webpackChunkName: "about" */ "../views/About.vue")
     },
     {
-        path: "/vue-codemirror",
-        name: "VueCodeMirrorDemo",
-        component: () => import("../views/VueCodeMirrorDemo.vue")
+        path: "/vue-codemirror_data_binding",
+        name: "VueCodeMirrorDataBindingDemo",
+        component: () => import("../views/VueCodeMirrorDataBindingDemo.vue")
+    },
+    {
+        path: "/vue-codemirror_manually_control_data_synchronization",
+        name: "VueCodeMirrorManuallyControlDataSynchronizationDemo",
+        component: () =>
+            import(
+                "../views/VueCodeMirrorManuallyControlDataSynchronizationDemo.vue"
+            )
+    },
+    {
+        path: "/js-yaml",
+        name: "JsYamlDemo",
+        component: () => import("../views/JsYamlDemo.vue")
     }
 ];
 

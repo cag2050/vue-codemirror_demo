@@ -1,7 +1,13 @@
 <template>
     <div>
-        <codemirror v-model="code" :options="cmOptions" ref="cmEditor" />
+        <codemirror
+            v-model="code"
+            :options="cmOptions"
+            ref="cmEditor"
+            class="CodeMirror"
+        />
         <el-button @click="getCode" class="btn">getCode</el-button>
+        <el-button @click="handleYamlToJson">yaml转换为json</el-button>
     </div>
 </template>
 
@@ -10,6 +16,8 @@ import { codemirror } from "vue-codemirror";
 import "codemirror/lib/codemirror.css";
 // import theme style
 import "codemirror/theme/base16-dark.css";
+
+const yaml = require("js-yaml");
 
 export default {
     components: {
@@ -40,9 +48,11 @@ export default {
             cmOptions: {
                 tabSize: 4,
                 mode: "text/x-yaml",
-                theme: "base16-dark",
+                // theme: "base16-dark",
+                theme: "default",
                 lineNumbers: true,
-                line: true
+                line: true,
+                viewportMargin: Infinity
                 // more CodeMirror options...
             }
         };
@@ -50,6 +60,15 @@ export default {
     methods: {
         getCode() {
             console.log(this.code);
+        },
+        handleYamlToJson() {
+            try {
+                console.log(yaml);
+                const doc = yaml.safeLoad(this.code);
+                console.log(doc);
+            } catch (e) {
+                console.log(e);
+            }
         }
     }
 };
@@ -58,5 +77,10 @@ export default {
 <style scoped>
 .btn {
     margin-top: 10px;
+}
+/* Autoresize Demo: https://codemirror.net/demo/resize.html */
+.CodeMirror {
+    border: 1px solid #eee;
+    height: auto !important;
 }
 </style>
