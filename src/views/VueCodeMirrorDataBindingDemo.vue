@@ -81,6 +81,7 @@ export default {
 /* Autoresize Demo: https://codemirror.net/demo/resize.html */
 .CodeMirror {
     border: 1px solid #eee;
-    height: auto !important;
+    height: auto;
+    font-size: 14px;
 }
 </style>
