@@ -7,6 +7,7 @@
             @ready="onCmReady"
             @focus="onCmFocus"
             @input="onCmCodeChange"
+            class="CodeMirror"
         />
         <el-button @click="getCode" class="btn">getCode</el-button>
     </div>
@@ -47,7 +48,8 @@ export default {
             cmOptions: {
                 tabSize: 4,
                 mode: "text/x-yaml",
-                theme: "base16-dark",
+                // theme: "base16-dark",
+                theme: "default",
                 lineNumbers: true,
                 line: true
                 // more CodeMirror options...
@@ -75,5 +77,11 @@ export default {
 <style scoped>
 .btn {
     margin-top: 10px;
+}
+/* Autoresize Demo: https://codemirror.net/demo/resize.html */
+.CodeMirror {
+    border: 1px solid #eee;
+    height: auto;
+    font-size: 14px;
 }
 </style>
