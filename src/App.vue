@@ -12,7 +12,14 @@
                 >vue-codemirror：手动控制数据同步</router-link
             >
             | <router-link to="/js-yaml">js-yaml</router-link> | |
-            <router-link to="/merge">代码merge对比例子</router-link> |
+            <router-link to="/vue_codemirror_merge"
+                >vue-codemirror 实现 merge 例子</router-link
+            >
+            |
+            <router-link to="/codemirror_merge"
+                >codemirror 实现 merge 例子</router-link
+            >
+            |
         </div>
         <div>===以下是内容===</div>
         <router-view />

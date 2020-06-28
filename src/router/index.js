@@ -38,9 +38,14 @@ const routes = [
         component: () => import("../views/JsYamlDemo.vue")
     },
     {
-        path: "/merge",
-        name: "MergeDemo",
-        component: () => import("../views/MergeDemo.vue")
+        path: "/vue_codemirror_merge",
+        name: "VueCodemirrorMergeDemo",
+        component: () => import("../views/VueCodemirrorMergeDemo.vue")
+    },
+    {
+        path: "/codemirror_merge",
+        name: "CodeMirrorMergeDemo",
+        component: () => import("../views/CodeMirrorMergeDemo.vue")
     }
 ]
 
