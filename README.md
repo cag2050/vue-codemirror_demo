@@ -3,6 +3,7 @@
 ### codemirror 相关资料
 codemirror 相关资料 | 网址
 --- | ---
+相关例子 | https://github.com/surmon-china/surmon-china.github.io/tree/source/projects/vue-codemirror/examples
 Language modes | https://codemirror.net/mode/index.html
 supported options | https://codemirror.net/doc/manual.html#config
 theme | https://codemirror.net/demo/theme.html

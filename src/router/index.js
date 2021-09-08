@@ -46,6 +46,11 @@ const routes = [
         path: "/codemirror_merge",
         name: "CodeMirrorMergeDemo",
         component: () => import("../views/CodeMirrorMergeDemo.vue")
+    },
+    {
+        path: "/javascript_demo",
+        name: "JavaScriptDemo",
+        component: () => import("../views/JavaScriptDemo.vue")
     }
 ]
 

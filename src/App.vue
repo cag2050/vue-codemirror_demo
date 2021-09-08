@@ -20,6 +20,7 @@
                 >codemirror 实现 merge 例子</router-link
             >
             |
+            <router-link to="/javascript_demo">JavaScript 样式</router-link>
         </div>
         <div>===以下是内容===</div>
         <router-view />
